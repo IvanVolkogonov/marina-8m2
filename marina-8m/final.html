@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Финал 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="final">
+  <div class="hearts" id="hearts"></div>
+
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">💌 <b>Финал</b> <span style="opacity:.75">для Марины</span></div>
+      <div class="badge">🎧 <span style="opacity:.85">есть голосовое</span></div>
+    </div>
+
+    <section class="card hero">
+      <h1 id="finalTitle">Марина, моя кошечка 💗</h1>
+      <p class="sub" id="finalSub">С 8 Марта, принцесса. Это письмо — от Вани.</p>
+
+      <div class="row">
+        <button class="btn" id="playVoice">Нажми и послушай 🎧</button>
+        <button class="btn secondary" id="burst">Сердечки ✨</button>
+        <button class="btn secondary" id="copy">Скопировать письмо</button>
+      </div>
+
+      <audio id="voice" preload="auto" controls style="width:100%; margin-top:12px; display:none;"></audio>
+
+      <div class="panel" style="margin-top:14px;">
+        <div style="font-weight:800;">Почему я тебя люблю</div>
+        <ul id="reasons" style="margin:10px 0 0; padding-left:18px; color:rgba(255,255,255,.8); line-height:1.55;"></ul>
+      </div>
+
+      <div id="letter" class="memory" style="margin-top:14px;"></div>
+
+      <div class="panel" style="margin-top:14px;">
+        <div style="font-weight:800; margin-bottom:8px;">Наши фото</div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+
+      <div class="row" style="margin-top:14px;">
+        <a class="btn secondary" href="index.html">← Начало</a>
+        <a class="btn" href="game.html">Переиграть уровни 🎮</a>
+      </div>
+    </section>
+
+    <footer>Если музыка/звук не включились — нажми кнопку ещё раз (на телефонах так бывает) 💗</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

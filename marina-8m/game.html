@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Игра для Марины 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="game">
+  <div class="hearts" id="hearts"></div>
+
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">🎮 <b>Уровни</b> <span style="opacity:.75">любви</span></div>
+      <div class="badge">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="card hero">
+        <h1 id="lvlTitle">Уровень</h1>
+        <p class="sub" id="lvlHint">Подсказка</p>
+
+        <div class="row">
+          <input class="input" id="answer" placeholder="Напиши ответ здесь…" autocomplete="off">
+          <button class="btn" id="check">Проверить</button>
+          <button class="btn secondary" id="next" style="display:none;">Дальше →</button>
+        </div>
+
+        <div class="sub" id="msg" style="margin-top:10px; opacity:0;"></div>
+
+        <div id="memory" class="memory" style="margin-top:14px; display:none;"></div>
+
+        <div class="row" style="margin-top:14px;">
+          <a class="btn secondary small" href="index.html">← На главную</a>
+          <button class="btn secondary small" id="reset" title="Сброс прогресса (для Вани)">Сброс</button>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2>Милый альбомчик</h2>
+        <p class="sub" style="margin:0 0 10px;">
+          Здесь можно будет показать 6 ваших фото. (Сейчас могут быть заглушки, если фото ещё не добавлены.)
+        </p>
+        <div class="gallery" id="gallery"></div>
+      </aside>
+    </div>
+
+    <footer>Подсказка: ответы можно писать без лишних символов 🙂</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
